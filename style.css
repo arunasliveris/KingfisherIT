@@ -69,8 +69,6 @@ nav ul {
 }
 nav ul li {
     float: left;
-    margin: 0px;
-    padding: 0px;
 }
 nav ul li:hover a {
     background-color: #456ca9;
