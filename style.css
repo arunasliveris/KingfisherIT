@@ -1,31 +1,28 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: arial, helvetica, verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: arial, helvetica, verdana, sans-serif;
 }
-
 /*
 css code for the header starts here
 */
-#header{
-  height: 100px;
-  width: 700px;
-  margin: 0 auto; 
-  text-align: center;
-}
 
+#header {
+    height: 100px;
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
 #logo {
-  padding-top: 22px;
-  float: left;
+    padding-top: 22px;
+    float: left;
 }
-
-
 #alert {
-	width: 35px;
-	height: 35px;
-	background: #ef7900;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    background: #ef7900;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
     float: right;
     margin-right: 20;
     margin-top: 26;
@@ -33,104 +30,88 @@ css code for the header starts here
     text-align: center;
     font-weight: bold;
 }
-
-#userID{
-  padding-top: 30px;
-  padding-right: 10px;
-  float: right;
-  font-size: 22px;
+#userID {
+    padding-top: 30px;
+    padding-right: 10px;
+    float: right;
+    font-size: 22px;
 }
 /*
 css for the header ends here
 */
-
 /*
 css for navigation bar ends here
 */
+
 nav {
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
     background-color: #5e5e5e;
     min-width: 700px;
 }
-
 nav ul ul {
     display: none;
 }
-
 nav ul li:hover > ul {
     display: block;
 }
-
 nav ul li {
     float: left;
     font-size: 18px;
-  
 }
-
-  nav ul {
-      list-style: none;
-      margin: 0;                
-      padding: 0;               
-      display: inline-block; 
-      vertical-align: top;
-
-  }
-
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
 nav ul li {
     float: left;
-    margin: 0;       
-    padding: 0;      
+    margin: 0;
+    padding: 0;
 }
-
 nav ul li:hover a {
     background-color: #456ca9;
     text-decoration: underline;
 }
-
 nav ul li a {
-    display: block; 
+    display: block;
     padding: 12px 38px;
     font-family: font123490, arial;
     text-transform: uppercase;
     color: white;
     text-decoration: none;
     background-color: #5e5e5e;
-}       
-
+}
 nav ul ul {
     padding: 0;
     position: absolute;
 }
-
 nav ul ul li {
-    float: none; 
+    float: none;
     border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;
     position: relative;
-  
 }
-
 nav ul ul li a:hover {
     background-color: #3e629b;
-  
-  
 }
-
 nav ul ul ul {
     position: absolute;
-    top:0;
+    top: 0;
 }
-
-#ts{
-  float: left;
-  padding-right: 130px;
+#ts {
+    float: left;
+    padding-right: 130px;
 }
 /*
 css code for navigation bar ends here
 */
-#PageContent{
-  height: 100px;
-  width: 700px;
-  margin: 20 auto; /* The number in this line controls the space between the menu and the PageContent div */
+
+#PageContent {
+    height: 100px;
+    width: 700px;
+    margin: 20 auto;
+    /* The number in this line controls the space between the menu and the PageContent div */
 }
