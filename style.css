@@ -10,7 +10,7 @@ css code for the header starts here
 */
 #header {
     height: 100px;
-    width: 700px;
+    width: 900px;
     margin: 0px auto;
     text-align: center;
 }
@@ -48,7 +48,7 @@ nav {
     margin: 0px auto;
     text-align: center;
     background-color: #5e5e5e;
-    min-width: 700px;
+    min-width: 900px;
 }
 nav ul ul {
     display: none;
@@ -101,7 +101,7 @@ nav ul ul ul {
 }
 #ts {
     float: left;
-    margin-right: 408px;
+    margin-right: 609px;
 }
 /*
 css code for navigation bar ends here
