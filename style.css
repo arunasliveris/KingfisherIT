@@ -109,6 +109,5 @@ css code for navigation bar ends here
 #PageContent {
     height: 100px;
     width: 900px;
-    margin: 20px auto;
-    /* The number in this line controls the space between the menu and the PageContent div */
+    margin: 20px auto; /* The number in this line controls the space between the menu and the PageContent div */
 }
