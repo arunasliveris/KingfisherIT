@@ -1,23 +1,41 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: arial, helvetica, verdana, sans-serif;
 }
 
-@font-face {
-    font-family: ProximaNova;
-    font-style: normal;
-    font-weight: normal;
-    src: url("proxima-nova.otf") format("opentype");
+/*
+css code for the header starts here
+*/
+#header{
+  height: 100px;
+  width: 700;
+  margin: 0 auto; 
+  text-align: center;
 }
+
+#logo {
+  padding-top: 22px;
+  float: left;
+}
+
+#userID{
+  padding: 30px;
+  float: right;
+  font-size: 22px;
+}
+/*
+css for the header ends here
+*/
 
 /*
 css for navigation bar ends here
 */
-
 nav {
-    margin: 50 auto; 
+    margin: 0 auto; 
     text-align: center;
     background-color: #5e5e5e;
+    min-width: 700px;
 }
 
 nav ul ul {
@@ -56,16 +74,15 @@ nav ul li:hover a {
 
 nav ul li a {
     display: block; 
-    padding: 10px 15px;
-    font-family: 'ProximaNova', arial;
+    padding: 12px 40px;
+    font-family: font123490, arial;
+    text-transform: uppercase;
     color: white;
     text-decoration: none;
     background-color: #5e5e5e;
-    width:  200px;
 }       
 
 nav ul ul {
-    border-radius: 0px;
     padding: 0;
     position: absolute;
 }
@@ -89,6 +106,10 @@ nav ul ul ul {
     top:0;
 }
 
+#ts{
+  float: left;
+  padding-right: 120px;
+}
 /*
-css for navigation bar ends here
+css code for navigation bar ends here
 */
