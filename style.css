@@ -9,7 +9,7 @@ css code for the header starts here
 */
 #header{
   height: 100px;
-  width: 700;
+  width: 700px;
   margin: 0 auto; 
   text-align: center;
 }
@@ -19,8 +19,24 @@ css code for the header starts here
   float: left;
 }
 
+
+#alert {
+	width: 35px;
+	height: 35px;
+	background: #ef7900;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    float: right;
+    margin-right: 20;
+    margin-top: 26;
+    line-height: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
 #userID{
-  padding: 30px;
+  padding-top: 30px;
+  padding-right: 10px;
   float: right;
   font-size: 22px;
 }
@@ -74,7 +90,7 @@ nav ul li:hover a {
 
 nav ul li a {
     display: block; 
-    padding: 12px 40px;
+    padding: 12px 38px;
     font-family: font123490, arial;
     text-transform: uppercase;
     color: white;
@@ -108,8 +124,13 @@ nav ul ul ul {
 
 #ts{
   float: left;
-  padding-right: 120px;
+  padding-right: 130px;
 }
 /*
 css code for navigation bar ends here
 */
+#PageContent{
+  height: 100px;
+  width: 700px;
+  margin: 20 auto; /* The number in this line controls the space between the menu and the PageContent div */
+}
