@@ -1,6 +1,25 @@
+<!DOCTYPE html>
 <html>
+
 <head>
+<meta charset="UTF-8">
+<title>Home page</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://www.fontify.me/wf/af83a66be5d910ef21b7df40e1dd588f" rel="stylesheet" type="text/css">
 </head>
+
 <body>
+   <nav id="nav">
+     <ul>
+       <li id="F"><a href="timesheets.html">Timesheets</a>
+          <ul>
+           <li><a href="timesheets.html">123</a></li>
+         </ul>
+       </li>
+       <li><a href="previous_time_page.html">Previous Timesheet</a></li>
+       <li><a href="help_page.html">Help</a></li>
+     </ul> 
+</nav>
 </body>
+
 </html>
