@@ -21,14 +21,12 @@ css code for the header starts here
 #alert {
     width: 35px;
     height: 35px;
-    background: #ef7900;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
     float: right;
     margin-right: 20px;
     margin-top: 26px;
     line-height: 35px;
     font-weight: bold;
+    background: url(http://i.imgur.com/P61vIDr.png);
 }
 #userID {
     padding-top: 30px;
