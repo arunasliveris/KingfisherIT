@@ -123,3 +123,13 @@ font-family: Proxima Nova;
 #extraPara{
 	font-family: Arial;
 }
+#homeDivs{
+	float: left;
+	padding-right: 30px;
+}
+#homeDivsEnd{
+	float: right;
+}
+#homeDivsMid{
+	float: left;
+}
