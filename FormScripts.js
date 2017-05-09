@@ -17,10 +17,11 @@ function openTab(evt, tabName) {
 	}
 document.getElementById("defaultOpen").click();
 
-function displayPartInfo() {
-				document.getElementById("partInfo").style.display = "block";
+function showStartFinish(e) {
+				var element = e.parentNode.parentNode.parentNode.childNodes[9];
+				element.setAttribute("class", "startFinishActive");
 			}
-			
-			function removePartInfo() {
-				document.getElementById("partInfo").style.display = "none";
+			function removeStartFinish(e) {
+				var element = e.parentNode.parentNode.parentNode.childNodes[9];
+				element.setAttribute("class", "startFinishHidden");
 			}
