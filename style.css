@@ -157,6 +157,22 @@ css code for contest form starts here
   width: 80px;
   text-align: center;
 }
+.submitButton{
+  width: 200px;
+  height: 40px;
+  background-color: #ef7900;
+  border-style: hidden;
+  font-size: 22px;
+  font-family: Verdana, Geneva, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  margin: 0px auto;
+  border-radius: 5px;
+}
+#cButton{
+  max-width: 200px;
+  margin: 0px auto;
+}
 /*
 css code for contest form ends here
 */
