@@ -11,18 +11,38 @@
      <script>  $(document).ready(function() {
     $("#datepicker").datepicker();
   });
+	function showTimes(e) {
+		var element = e.parentNode.parentNode.parentNode.childNodes;
+		for (var i=0; i<element.length; i++) {
+			if (element[i].className == "startFinishHidden") {
+				element[i].className = "startFinishActive";
+			}
+		}
+	}
+	function removeTimes(e) {
+		var element = e.parentNode.parentNode.parentNode.childNodes;
+		for (var i=0; i<element.length; i++) {
+			if (element[i].className == "startFinishActive") {
+				element[i].className = "startFinishHidden";
+			}
+		}
+	}
 </script>
    </head>
    <body>
       <div id="header">
          <div id="logo">
+		 <a href="indexHome.html">
             <img src="http://i.imgur.com/iLiAYk4.gif" alt="Kingfisher logo">
+			</a>
          </div>
          <div id="userID">
             user123
          </div>
-         <div id="alert">3</div>
+         <a href="notification.html">
+		 <div id="alert">3</div>
       </div>
+	  </a>
       <nav id="nav">
          <ul>
             <li id="ts">
@@ -64,12 +84,28 @@
           
           <div class="section">Hours: <div class="displayedInfo">                 
             <label for="full">Full</label>
-            <input type="radio" name="hours" id="full" class="check">
+            <input type="radio" name="hours" id="full" class="check" onclick="removeTimes(this)">
             <br/>
                  <label for="part" id="part">Part</label>
-           <input type="radio" name="hours" class="check" id="part"><br/>
+           <input type="radio" name="hours" class="check" id="part" onclick="showTimes(this);"><br/>
                 </div></div>
-       
+       <div class="startFinishActive">
+						<fieldset class="startFinishBox">
+						Start: 	<select class="startTimes">
+									<option>09:00</option>
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+								</select>
+						<br><br>
+						Finish:	<select class="finishTimes">
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+									<option>13:00</option>
+								</select>
+						</fieldset>	
+					</div>
         </div>
           <div class="formContent" id="reason"><textarea id="reasonI"  placeholder="Reasons for changes (Optional)..." ></textarea><br /></div>
   
