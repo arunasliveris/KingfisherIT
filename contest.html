@@ -1,115 +1,207 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <meta charset="UTF-8">
-      <title>Contest Timesheet</title>
-      <link rel="stylesheet" href="style.css">
-      <link href="https://www.fontify.me/wf/b0b35f6a9b13ab1907d6a76fbbf327ff" rel="stylesheet" type="text/css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-     <script>  $(document).ready(function() {
-    $("#datepicker").datepicker();
-  });
-	function showTimes(e) {
-		var element = e.parentNode.parentNode.parentNode.childNodes;
-		for (var i=0; i<element.length; i++) {
-			if (element[i].className == "startFinishHidden") {
-				element[i].className = "startFinishActive";
-			}
-		}
-	}
-	function removeTimes(e) {
-		var element = e.parentNode.parentNode.parentNode.childNodes;
-		for (var i=0; i<element.length; i++) {
-			if (element[i].className == "startFinishActive") {
-				element[i].className = "startFinishHidden";
-			}
-		}
-	}
-</script>
-   </head>
-   <body>
-      <div id="header">
-         <div id="logo">
-		 <a href="indexHome.html">
-            <img src="http://i.imgur.com/iLiAYk4.gif" alt="Kingfisher logo">
-			</a>
-         </div>
-         <div id="userID">
-            user123
-         </div>
-         <a href="notification.html">
-		 <div id="alert">3</div>
-      </div>
-	  </a>
-      <nav id="nav">
-         <ul>
-            <li id="ts">
-               <a  id="active" href="timesheets.html">Timesheets</a>
-               <ul>
-                  <li><a href="previous.html">Previous Timesheets</a></li>
-                 <li><a href="contest.html">Contest Timesheets</a></li>
-               </ul>
-              
-            </li>
-            <li><a href="help_page.html">Help</a></li>
-         </ul>
-      </nav>
-      <div id="PageContent">
-        <div class="formContainer">
-        <div class="formHeader">
-          Original timesheet
-           </div>
-        <div class="formContent">
-          <div class="section">Project: <div class="displayedInfo">COMP31</div><br/></div>
-          <div class="section">Date: <div class="displayedInfo">12/05/2017</div><br/></div>
-          <div class="section">Hours: <div class="displayedInfo">Part, 09:00-13:00</div><br/></div>
-        </div>
-          
-          <div class="formHeader">
-          Your changes
-           </div>
-        <div class="formContent">
-          <div class="section">Project: <div class="displayedInfo"> 
-            <select>
-              <option selected>COMP31</option>
-              <option>COMP43</option>
-              <option>DES21</option>
-              <option>R&D44</option>
-            </select>
-            <br /></div><br/></div>
-          
-          <div class="section">Date: <div class="displayedInfo"><input class="i" id="datepicker" value="05/19/2017"/></div><br/></div>
-          
-          <div class="section">Hours: <div class="displayedInfo">                 
-            <label for="full">Full</label>
-            <input type="radio" name="hours" id="full" class="check" onclick="removeTimes(this)">
-            <br/>
-                 <label for="part" id="part">Part</label>
-           <input type="radio" name="hours" class="check" id="part" onclick="showTimes(this);"><br/>
-                </div></div>
-       <div class="startFinishActive">
-						<fieldset class="startFinishBox">
-						Start: 	<select class="startTimes">
-									<option>09:00</option>
-									<option>10:00</option>
-									<option>11:00</option>
-									<option>12:00</option>
-								</select>
-						<br><br>
-						Finish:	<select class="finishTimes">
-									<option>10:00</option>
-									<option>11:00</option>
-									<option>12:00</option>
-									<option>13:00</option>
-								</select>
-						</fieldset>	
-					</div>
-        </div>
-          <div class="formContent" id="reason"><textarea id="reasonI"  placeholder="Reasons for changes (Optional)..." ></textarea><br /></div>
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: arial, helvetica, verdana, sans-serif, Proxima Nova;
+}
+
+
+/*
+css code for the header starts here
+*/
+#header {
+    height: 100px;
+    width: 900px;
+    margin: 0px auto;
+    text-align: center;
+}
+#logo {
+    padding-top: 30px;
+    float: left;
+}
+#alert {
+    width: 35px;
+    height: 35px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 26px;
+    line-height: 35px;
+    font-weight: bold;
+    background: url(http://i.imgur.com/P61vIDr.png);
+}
+#noti {
+  text-decoration: none;
+  color:  #ffffff;
   
-        </div>
-      </div>
-   </body>
-</html>
+}
+#userID {
+    padding-top: 30px;
+    padding-right: 10px;
+    float: right;
+    font-size: 22px;
+}
+/*
+css for the header ends here
+*/
+
+
+/*
+css for navigation bar ends here
+*/
+nav {
+    margin: 0px auto;
+    text-align: center;
+    background-color: #5e5e5e;
+    min-width: 900px;
+}
+nav ul ul {
+    display: none;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul li {
+    float: left;
+    font-size: 18px;
+}
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+nav ul li {
+    float: left;
+}
+nav ul li:hover a {
+    background-color: #456ca9;
+    text-decoration: underline;
+}
+nav ul li a {
+    display: block;
+    padding: 11px 38px;
+    font-family: font123490, arial;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    background-color: #5e5e5e;
+}
+nav ul ul {
+    padding: 0px;
+    position: absolute;
+}
+nav ul ul li {
+    float: none;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    position: relative;
+}
+nav ul ul li a:hover {
+    background-color: #3e629b;
+}
+nav ul ul ul {
+    position: absolute;
+}
+#ts {
+    float: left;
+    margin-right: 596px;
+}
+/*
+css code for navigation bar ends here
+*/
+/*
+css code for contest form starts here
+*/
+.formContainer{
+  max-width: 600px;
+  margin: 30px auto;
+}
+.formHeader{
+  font-family: proxima-nova, sans-serif;
+  font-size: 20px;
+  width: 180px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #456ca9;
+  padding: 8px;
+}
+.formContent{
+  border: 3px solid #bbc3ce;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+.section{
+  padding: 10px;
+}
+.displayedInfo{
+  float: right;
+  min-width: 35%;
+  
+}
+.check{
+ float: right;
+ margin-right: 140px;
+}
+#reason{
+  margin-top: -33px;
+}
+#reasonI{
+  width: 100%;
+  min-height: 35px;
+  margin: 5px auto; 
+  border-style: none;
+}
+.i{
+  width: 80px;
+  text-align: center;
+}
+/*
+css code for contest form ends here
+*/
+.startFinishActive {
+	display: block;
+	position: relative;
+	width: 150px;
+	left: 64%;
+	bottom: -10px;
+}
+#contestActive{
+	bottom: 16px;
+    left:  430px;
+    outline: none;
+ 
+}
+.startFinishBox{
+  border: 0px solid;
+}
+.startFinishHidden {
+	display:none;
+}
+#PageContent {
+    height: 100px;
+    width: 900px;
+    margin: 20px auto; /* The number in this line controls the space between the menu and the PageContent div */
+}
+#ITContact{
+	float: left;
+	padding-right: 30px;
+}
+p{
+font-family: Proxima Nova;
+}
+
+#extraPara{
+	font-family: Arial;
+}
+#homeDivs{
+	float: left;
+	padding-right: 30px;
+}
+#homeDivsEnd{
+	float: right;
+}
+#homeDivsMid{
+	float: left;
+}
