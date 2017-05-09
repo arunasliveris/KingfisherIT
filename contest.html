@@ -68,13 +68,13 @@ window.onload=function() {
         <div class="formContent">
           <div class="section">Project: <div class="displayedInfo">COMP31</div><br/></div>
           <div class="section">Date: <div class="displayedInfo">12/05/2017</div><br/></div>
-          <div class="section">Hours: <div class="displayedInfo">Full, 09:00-17:00</div><br/></div>
+          <div class="section">Hours: <div class="displayedInfo">Part, 09:00-13:00</div><br/></div>
         </div>
           
           <div class="formHeader">
           Your changes
            </div>
-        <div class="formContent">
+        <div class="formContent" id="inputChange">
           <div class="section">Project: <div class="displayedInfo"> 
             <select>
               <option selected>COMP31</option>
@@ -86,23 +86,23 @@ window.onload=function() {
           
           <div class="section">Date: <div class="displayedInfo"><input class="i" id="datepicker" value="05/19/2017"/></div><br/></div>
           
-          <div class="section">Hours: <div class="displayedInfo" id="radio">                 
+          <div class="section" id="dynamicR">Hours: <div class="displayedInfo" id="radio">                 
             <label for="full">Full</label>
             <input type="radio" name="hours" id="full" class="check" onclick="removeTimes(this)" checked>
             <br/>
                  <label for="part" id="part">Part</label>
-           <input type="radio" name="hours" class="check" id="part" onclick="showTimes(this);"><br/>
+           <input type="radio" name="hours" class="check" id="partR" onclick="showTimes(this);"><br/>
                 </div></div>
        <div class="startFinishActive" id="contestActive">
-						<fieldset class="startFinishBox">
-						Start: 	<select class="startTimes">
+						<fieldset class="startFinishBox" id="startBox">
+						Start: 	<select class="startTimes" id="topSelect">
 									<option>09:00</option>
 									<option>10:00</option>
 									<option>11:00</option>
 									<option>12:00</option>
 								</select>
 						<br><br>
-						Finish:	<select class="finishTimes">
+						Finish:	<select class="finishTimes" id="bottomSelect">
 									<option>10:00</option>
 									<option>11:00</option>
 									<option>12:00</option>
