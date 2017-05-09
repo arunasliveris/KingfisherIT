@@ -22,12 +22,16 @@ css code for the header starts here
     width: 35px;
     height: 35px;
     float: right;
-	color: #ffffff;
     margin-right: 20px;
     margin-top: 26px;
     line-height: 35px;
     font-weight: bold;
     background: url(http://i.imgur.com/P61vIDr.png);
+}
+#noti {
+  text-decoration: none;
+  color:  #ffffff;
+  
 }
 #userID {
     padding-top: 30px;
@@ -149,6 +153,10 @@ css code for contest form starts here
   margin: 5px auto; 
   border-style: none;
 }
+.i{
+  width: 80px;
+  text-align: center;
+}
 /*
 css code for contest form ends here
 */
@@ -158,6 +166,15 @@ css code for contest form ends here
 	width: 150px;
 	left: 64%;
 	bottom: -10px;
+}
+#contestActive{
+	bottom: 16px;
+    left:  430px;
+    outline: none;
+ 
+}
+.startFinishBox{
+  border: 0px solid;
 }
 .startFinishHidden {
 	display:none;
