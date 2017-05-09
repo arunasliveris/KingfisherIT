@@ -111,3 +111,15 @@ css code for navigation bar ends here
     width: 900px;
     margin: 20px auto; /* The number in this line controls the space between the menu and the PageContent div */
 }
+
+#ITContact{
+	float: left;
+	padding-right: 30px;
+}
+p{
+font-family: Proxima Nova;
+}
+
+#extraPara{
+	font-family: Arial;
+}
