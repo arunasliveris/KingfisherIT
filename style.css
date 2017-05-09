@@ -146,12 +146,14 @@ css code for contest form starts here
 }
 #reason{
   margin-top: -33px;
+  padding-bottom: 5px;
 }
 #reasonI{
   width: 100%;
   min-height: 35px;
   margin: 5px auto; 
   border-style: none;
+  resize:vertical;
 }
 .i{
   width: 80px;
