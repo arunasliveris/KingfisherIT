@@ -142,7 +142,7 @@ css code for contest form starts here
 }
 .check{
  float: right;
- margin-right: 140px;
+ margin-right: 165px;
  
 }
 #reason{
@@ -217,7 +217,7 @@ css code for contest form ends here
     left:  430px;
     outline: none;
     margin-top: -14px;
-    margin-left: 5px;
+    margin-left: -15px;
 }
 .startFinishBox{
   border: 0px solid;
