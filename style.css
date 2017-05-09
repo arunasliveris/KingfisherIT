@@ -137,12 +137,13 @@ css code for contest form starts here
 }
 .displayedInfo{
   float: right;
-  min-width: 35%;
+  min-width: 40%;
   
 }
 .check{
  float: right;
  margin-right: 140px;
+ 
 }
 #reason{
   margin-top: -33px;
@@ -175,6 +176,32 @@ css code for contest form starts here
   max-width: 200px;
   margin: 0px auto;
 }
+#part{
+    margin-top: 20px;
+    float: left;
+    margin-right: 0px;
+}
+#partR{
+  margin-top: 22px;
+  
+}
+#dynamicR{
+  padding-bottom: 40px;
+}
+#startBox{
+  margin-bottom: -15px;
+  padding: 10px;
+}
+#topSelect {
+  margin-bottom: 0px;
+  margin-right: 15px;
+  float: right;
+}
+#bottomSelect {
+  margin-bottom: 0px;
+  margin-right: 15px;
+  float: right;
+}
 /*
 css code for contest form ends here
 */
@@ -189,7 +216,8 @@ css code for contest form ends here
 	bottom: 16px;
     left:  430px;
     outline: none;
- 
+    margin-top: -14px;
+    margin-left: 5px;
 }
 .startFinishBox{
   border: 0px solid;
