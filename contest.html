@@ -27,6 +27,10 @@
 			}
 		}
 	}
+window.onload=function() {
+  fullRadio = document.getElementById("full");
+  removeTimes(fullRadio);
+}
 </script>
    </head>
    <body>
@@ -84,7 +88,7 @@
           
           <div class="section">Hours: <div class="displayedInfo">                 
             <label for="full">Full</label>
-            <input type="radio" name="hours" id="full" class="check" onclick="removeTimes(this)">
+            <input type="radio" name="hours" id="full" class="check" onclick="removeTimes(this)" checked>
             <br/>
                  <label for="part" id="part">Part</label>
            <input type="radio" name="hours" class="check" id="part" onclick="showTimes(this);"><br/>
@@ -107,8 +111,8 @@
 						</fieldset>	
 					</div>
         </div>
-          <div class="formContent" id="reason"><textarea id="reasonI"  placeholder="Reasons for changes (Optional)..." ></textarea><br /></div>
-  
+          <div class="formContent" id="reason"><textarea id="reasonI"  placeholder="Reasons for changes (Optional)..." ></textarea><br /></div><div id="cButton">
+  <button class="submitButton" onclick="window.alert('Timesheet changed and submitted.')">Submit</button></div>
         </div>
       </div>
    </body>
