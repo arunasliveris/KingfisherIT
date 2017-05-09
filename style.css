@@ -19,6 +19,7 @@ css code for the header starts here
     float: left;
 }
 #alert {
+    color: #ffffff;
     width: 35px;
     height: 35px;
     float: right;
@@ -101,8 +102,60 @@ nav ul ul ul {
     float: left;
     margin-right: 596px;
 }
+#active{
+  background-color: #456ca9;
+}
 /*
 css code for navigation bar ends here
+*/
+
+
+/*
+css code for contest form starts here
+*/
+.formContainer{
+  max-width: 600px;
+  margin: 30px auto;
+}
+.formHeader{
+  font-family: proxima-nova, sans-serif;
+  font-size: 20px;
+  width: 180;
+  color: #ffffff;
+  text-align: center;
+  background-color: #456ca9;
+  padding: 8px;
+}
+.formContent{
+  border: 3px solid #bbc3ce;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+.section{
+  padding: 10px;
+}
+.displayedInfo{
+  float: right;
+  min-width: 35%;
+  
+}
+.check{
+ float: right;
+ margin-right: 140px;
+}
+#reason{
+  margin-top: -33px;
+}
+#reasonI{
+  width: 100%;
+  min-height: 35px;
+  margin: 5px auto; 
+  border-style: none;
+}
+/*
+css code for contest form ends here
 */
 
 
@@ -111,6 +164,8 @@ css code for navigation bar ends here
     width: 900px;
     margin: 20px auto; /* The number in this line controls the space between the menu and the PageContent div */
 }
+
+
 
 #ITContact{
 	float: left;
