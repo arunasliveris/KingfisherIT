@@ -1,0 +1,129 @@
+<html>
+<head>
+<link rel="stylesheet" href="formStyles.css">
+      <meta charset="UTF-8">
+      <title>Timesheet</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://www.fontify.me/wf/b0b35f6a9b13ab1907d6a76fbbf327ff" rel="stylesheet" type="text/css">
+</head>
+<body>
+      <div id="header">
+         <div id="logo">
+            <img src="http://i.imgur.com/iLiAYk4.gif" alt="Kingfisher logo">
+         </div>
+         <div id="userID">
+            user123
+         </div>
+         <div id="alert">3</div>
+      </div>
+      <nav id="nav">
+         <ul>
+            <li id="ts">
+               <a href="timesheets.html">Timesheets</a>
+               <ul>
+                  <li><a href="previous_time_page.html">Previous Timesheets</a></li>
+               </ul>
+            </li>
+            <li><a href="help_page.html">Help</a></li>
+         </ul>
+      </nav>
+	  <div id="PageContent">
+	  <h1>Timesheet Submmissions</h1>
+ <div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Half1')" id="defaultOpen">1ST HALF</button>
+  <button class="tablinks" onclick="openTab(event, 'Half2')">2ND HALF</button>
+  <button class="tablinks" onclick="openTab(event, 'Internal')">INTERNAL HOURS</button>
+
+
+</div>
+
+<div id="Half1" class="tabcontent">
+	<form>
+			<fieldset class="outerContainer">
+				<legend><b>Hours Worked</b></legend>
+				<div class="formContainer">
+				<h2>Project:<select class="projectSelect">
+							<option>COMP32</option>
+							<option>DES21</option>
+							<option>RD44</option>
+						</select>
+				</h2>
+				<h2>Hours:</h2>
+				<div class="hoursWorkedOptions">
+					<h3>Full <input type="radio" name="hoursOption" onclick="removeStartFinish(this);" checked>
+					<br><br>
+					Part <input type="radio" name="hoursOption" onclick="showStartFinish(this);"></h3>
+				</div>
+				<button class="submitHours" onclick="window.alert('First half of timesheet submitted. Click 2nd Half to log more hours.')">Sumbit</button>
+				<div class="startFinishHidden">
+						<fieldset class="startFinishBox">
+						Start: 	<select class="startTimes">
+									<option>09:00</option>
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+								</select>
+						<br><br>
+						Finish:	<select class="finishTimes">
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+									<option>13:00</option>
+								</select>
+						</fieldset>	
+					</div>
+				</div>
+			</fieldset>
+		</form>
+</div>
+
+<div id="Half2" class="tabcontent">
+	<form>
+			<fieldset class="outerContainer">
+				<legend><b>Hours Worked</b></legend>
+				<div class="formContainer">
+				<h2>Project:<select class="projectSelect">
+							<option>COMP32</option>
+							<option>DES21</option>
+							<option>RD44</option>
+						</select>
+				</h2>
+				<h2>Hours:</h2>
+				<div class="hoursWorkedOptions">
+					<h3>Full <input type="radio" name="hoursOption" onclick="removeStartFinish(this);" checked>
+					<br><br>
+					Part <input type="radio" name="hoursOption" onclick="showStartFinish(this);"></h3>
+				</div>
+				<button class="submitHours" onclick="window.alert('Timesheet submitted')">Sumbit</button>
+				<div class="startFinishHidden">
+					<fieldset class="startFinishBox">
+						Start: 	<select class="startTimes">
+									<option>13:00</option>
+									<option>14:00</option>
+									<option>15:00</option>
+									<option>16:00</option>
+								</select>
+						<br><br>
+						Finish:	<select class="finishTimes">
+									<option>14:00</option>
+									<option>15:00</option>
+									<option>16:00</option>
+									<option>17:00</option>
+								</select>
+						</fieldset>	
+					</div>
+				</div>
+			</fieldset>
+		</form>
+</div>
+
+<div id="Internal" class="tabcontent">
+  <form>
+  <h3>Internal Hour Submission</h3>
+  </form>
+</div>
+</div>
+</body>
+<script src="FormScripts.js">
+</script>
+</html>
