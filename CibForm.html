@@ -1,0 +1,68 @@
+<html>
+<head>
+<link rel="stylesheet" href="formStyles.css">
+</head>
+<body>
+<h1>Base Form</h1>
+ <div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Half1')" id="defaultOpen">1ST HALF</button>
+  <button class="tablinks" onclick="openTab(event, 'Half2')">2ND HALF</button>
+  <button class="tablinks" onclick="openTab(event, 'Internal')">INTERNAL HOURS</button>
+
+
+</div>
+
+<div id="Half1" class="tabcontent">
+  <form id="firstHalf">
+			<fieldset>
+				<legend>Hours worked</legend>
+				<b>Project:</b><select name="projects">
+					<option value="COMP32">COMP32</option>
+					<option value="DES21">DES21</option>
+					<option value="R&D44">R&D44</option>
+				</select>
+				<br><br>
+				<b>Hours:<div class="options">
+					<ul>Full<input id="fullRadio" type="radio" name="hours" value="full" onclick="removePartInfo();" checked></ul>
+					<ul>Part<input id="partRadio" type="radio" name="hours" value="part" onclick="displayPartInfo();"></ul>
+					<div id="partInfo">
+					<fieldset id="partTimeField">
+						<legend>Part Time</legend>
+					Start:	<select name="startTime">
+							<option value="09:00" selected>09:00</option>
+							<option value="10:00">10:00</option>
+							<option value="11:00">11:00</option>
+							<option value="12:00">12:00</option>
+							</select>
+							<br><br>
+					End:	<select name="endTime">
+							<option value="10:00">10:00</option>
+							<option value="11:00">11:00</option>
+							<option value="12:00">12:00</option>
+							<option value="13:00">13:00</option>
+							</select>
+						</fieldset>
+					</div>
+					
+				</div></b>
+				
+			</fieldset>
+  </form>
+</div>
+
+<div id="Half2" class="tabcontent">
+  <form>
+  <h3>2nd Half Day Form</h3>
+  </form>
+</div>
+
+<div id="Internal" class="tabcontent">
+  <form>
+  <h3>Internal Hour Submission</h3>
+  </form>
+</div>
+
+</body>
+<script src="FormScripts.js">
+</script>
+</html>

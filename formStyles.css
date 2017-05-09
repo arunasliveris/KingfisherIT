@@ -1,0 +1,51 @@
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #5E5E5E;
+	font-family: Proxima Nova;
+}
+
+div.tab button {
+    background-color: inherit;
+	font-family: inherit;
+	font-size: 16px;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+	color: #FFFFFF;
+}
+
+div.tab button:hover {
+    background-color: #456CA9;
+}
+
+div.tab button.active {
+    background-color: #456CA9;
+}
+
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #5E5E5E;
+    border-top: none;
+	font-family: Proxima Nova;
+}
+
+#partInfo {
+				position: relative;
+				left: 120px;
+				bottom: 35px;
+				display: none;
+			}
+			#partTimeField {
+				width: 16%;
+			}
+			
+legend{
+	font-family: Proxima Nova;
+	font-size: 18px;
+}
