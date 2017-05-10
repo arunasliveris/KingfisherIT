@@ -22,16 +22,12 @@ css code for the header starts here
     width: 35px;
     height: 35px;
     float: right;
+	color: #ffffff;
     margin-right: 20px;
     margin-top: 26px;
     line-height: 35px;
     font-weight: bold;
     background: url(http://i.imgur.com/P61vIDr.png);
-}
-#noti {
-  text-decoration: none;
-  color:  #ffffff;
-  
 }
 #userID {
     padding-top: 30px;
@@ -119,7 +115,7 @@ css code for contest form starts here
 .formHeader{
   font-family: proxima-nova, sans-serif;
   font-size: 20px;
-  width: 180px;
+  width: 180;
   color: #ffffff;
   text-align: center;
   background-color: #456ca9;
@@ -137,99 +133,66 @@ css code for contest form starts here
 }
 .displayedInfo{
   float: right;
-  min-width: 40%;
+  min-width: 35%;
   
 }
 .check{
  float: right;
- margin-right: 165px;
- 
+ margin-right: 140px;
 }
 #reason{
   margin-top: -33px;
-  padding-bottom: 5px;
 }
 #reasonI{
   width: 100%;
   min-height: 35px;
   margin: 5px auto; 
   border-style: none;
-  resize:vertical;
 }
-.i{
-  width: 80px;
-  text-align: center;
-}
-.submitButton{
-  width: 200px;
-  height: 40px;
-  background-color: #ef7900;
-  border-style: hidden;
-  font-size: 22px;
-  font-family: Verdana, Geneva, sans-serif;
-  text-transform: uppercase;
-  color: white;
-  margin: 0px auto;
-  border-radius: 5px;
-}
-#cButton{
-  max-width: 200px;
-  margin: 0px auto;
-}
-#part{
-    margin-top: 20px;
-    float: left;
-    margin-right: 0px;
-}
-#partR{
-  margin-top: 22px;
-  
-}
-#dynamicR{
-  padding-bottom: 50px;
-}
-#startBox{
-  margin-bottom: -15px;
-  padding: 10px;
-}
-#topSelect {
-  margin-bottom: 0px;
-  margin-right: 15px;
-  float: right;
-}
-#bottomSelect {
-  margin-bottom: 0px;
-  margin-right: 15px;
-  float: right;
-}
-/*
-css code for contest form ends here
-*/
-.startFinishActive {
+
+.startFinishActiveContest {
 	display: block;
 	position: relative;
 	width: 150px;
 	left: 64%;
 	bottom: -10px;
 }
-#contestActive{
-	bottom: 16px;
-    left:  430px;
-    outline: none;
-    margin-top: -14px;
-    margin-left: -15px;
-}
-.startFinishBox{
-  border: 0px solid;
-}
-.startFinishHidden {
+.startFinishHiddenContest {
 	display:none;
 }
+.submitHours {
+				position: relative;
+				color: white;
+				width: 150px;
+				height:40px;
+				border-radius: 7px 7px 7px;
+				font-size: 15pt;
+				border: none;
+				background-color: #EF7900;
+				/*bottom: -20px;*/
+				/*left: 55%;*/
+			}
+			.submitHours:hover {
+				cursor: pointer;
+				border: 2px solid #FFA64D;
+			}
+#btnHolder{
+	text-align: center;
+	background-color: #ffffff;
+	margin: 20px auto;
+}
+/*
+css code for contest form ends here
+*/
 #PageContent {
     height: 100px;
     width: 900px;
     margin: 20px auto; /* The number in this line controls the space between the menu and the PageContent div */
 }
+
+
+
+/*Help and homepage*/
 #ITContact{
 	float: left;
 	padding-right: 30px;

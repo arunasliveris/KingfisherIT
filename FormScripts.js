@@ -25,3 +25,12 @@ function showStartFinish(e) {
 				var element = e.parentNode.parentNode.parentNode.childNodes[9];
 				element.setAttribute("class", "startFinishHidden");
 			}
+			
+function displayDatePickers(e) {
+				var element = e.parentNode.parentNode.childNodes[11];
+				element.setAttribute("class","datePickersActive");
+			}
+			function removeDatePickers(e) {
+				var element = e.parentNode.parentNode.childNodes[11];
+				element.setAttribute("class","datePickersHidden");
+			}

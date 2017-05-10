@@ -9,22 +9,25 @@
 <body>
       <div id="header">
          <div id="logo">
+		 <a href="indexHome.html">
             <img src="http://i.imgur.com/iLiAYk4.gif" alt="Kingfisher logo">
+			</a>
          </div>
          <div id="userID">
             user123
          </div>
-       <div id="alert"><a id="noti" href="notification.html">3</a></div>
+        <a href="notification.html">
+		 <div id="alert">3</div>
       </div>
-            <nav id="nav">
+	  </a>
+      <nav id="nav">
          <ul>
             <li id="ts">
-               <a  id="active" href="timesheets.html">Timesheets</a>
+               <a href="timesheets.html">Timesheets</a>
                <ul>
-                  <li><a href="previous.html">Previous Timesheets</a></li>
-                 <li><a href="contest.html">Contest Timesheets</a></li>
+                  <li><a href="previous_time_page.html">Previous Timesheets</a></li>
+				  <li><a href="contest_time_page.html">Contest Timesheets</a></li>
                </ul>
-              
             </li>
             <li><a href="help_page.html">Help</a></li>
          </ul>
@@ -56,7 +59,7 @@
 					<br><br>
 					Part <input type="radio" name="hoursOption" onclick="showStartFinish(this);"></h3>
 				</div>
-				<button class="submitHours" onclick="window.alert('First half of timesheet submitted. Click 2nd Half to log more hours.')">Sumbit</button>
+				<button class="submitHours" onclick="window.alert('First half of timesheet submitted. Click 2nd Half to log more hours.')">submit</button>
 				<div class="startFinishHidden">
 						<fieldset class="startFinishBox">
 						Start: 	<select class="startTimes">
@@ -96,7 +99,7 @@
 					<br><br>
 					Part <input type="radio" name="hoursOption" onclick="showStartFinish(this);"></h3>
 				</div>
-				<button class="submitHours" onclick="window.alert('Timesheet submitted')">Sumbit</button>
+				<button class="submitHours" onclick="window.alert('Timesheet submitted')">submit</button>
 				<div class="startFinishHidden">
 					<fieldset class="startFinishBox">
 						Start: 	<select class="startTimes">
@@ -120,9 +123,47 @@
 </div>
 
 <div id="Internal" class="tabcontent">
-  <form>
-  <h3>Internal Hour Submission</h3>
-  </form>
+<form>
+		<fieldset class="outerContainer">
+			<legend>Report Hours</legend>
+			<div class="formContainer">
+			<h2>Type:<select class="timesheetType">
+				<option>Public Holiday</option>
+				<option>Sick</option>
+				<option>Annual leave</option>
+				<option>Training</option>
+				<option>Management time</option>
+				<option>Maternity leave</option>
+				<option>Department meetings</option>
+				<option>Personal</option>
+			</select></h2>
+			<h2>Hours:</h2>
+			<div class="daysText">
+				Half Day
+				<br>
+				Full Day
+				<br>
+				Multiple Days
+				<br>
+			</div>
+			<div class="daysSelection">
+				<input type="radio" name="days" onclick="removeDatePickers(this);" checked>
+				<br>
+				<input type="radio" name="days" onclick="removeDatePickers(this);">
+				<br>
+				<input type="radio" name="days" onclick="displayDatePickers(this);">
+			</div>
+			<button class="submitHours">submit</button>
+			<div class="datePickersHidden">
+			<fieldset style="width:200px;">
+				From:<input type="date" style="position:relative;left:20px;">
+				<br><br>
+				To:<input type="date" style="position:relative;left:38px;">
+			</fieldset>
+			</div>
+			</div>
+			</fieldset>
+		</form>
 </div>
 </div>
 </body>
