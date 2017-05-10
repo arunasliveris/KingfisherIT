@@ -1,0 +1,253 @@
+-body {
+-    margin: 0px;
+-    padding: 0px;
+-    font-family: arial, helvetica, verdana, sans-serif, Proxima Nova;
+-}
+-
+-
+-/*
+-css code for the header starts here
+-*/
+-#header {
+-    height: 100px;
+-    width: 900px;
+-    margin: 0px auto;
+-    text-align: center;
+-}
+-#logo {
+-    padding-top: 30px;
+-    float: left;
+-}
+-#alert {
+-    width: 35px;
+-    height: 35px;
+-    float: right;
+-    margin-right: 20px;
+-    margin-top: 26px;
+-    line-height: 35px;
+-    font-weight: bold;
+-    background: url(http://i.imgur.com/P61vIDr.png);
+-}
+-#noti {
+-  text-decoration: none;
+-  color:  #ffffff;
+-  
+-}
+-#userID {
+-    padding-top: 30px;
+-    padding-right: 10px;
+-    float: right;
+-    font-size: 22px;
+-}
+-/*
+-css for the header ends here
+-*/
+-
+-
+-/*
+-css for navigation bar ends here
+-*/
+-nav {
+-    margin: 0px auto;
+-    text-align: center;
+-    background-color: #5e5e5e;
+-    min-width: 900px;
+-}
+-nav ul ul {
+-    display: none;
+-}
+-nav ul li:hover > ul {
+-    display: block;
+-}
+-nav ul li {
+-    float: left;
+-    font-size: 18px;
+-}
+-nav ul {
+-    list-style: none;
+-    margin: 0px;
+-    padding: 0px;
+-    display: inline-block;
+-    vertical-align: top;
+-}
+-nav ul li {
+-    float: left;
+-}
+-nav ul li:hover a {
+-    background-color: #456ca9;
+-    text-decoration: underline;
+-}
+-nav ul li a {
+-    display: block;
+-    padding: 11px 38px;
+-    font-family: font123490, arial;
+-    text-transform: uppercase;
+-    color: white;
+-    text-decoration: none;
+-    background-color: #5e5e5e;
+-}
+-nav ul ul {
+-    padding: 0px;
+-    position: absolute;
+-}
+-nav ul ul li {
+-    float: none;
+-    border-top: 1px solid #000000;
+-    border-bottom: 1px solid #000000;
+-    position: relative;
+-}
+-nav ul ul li a:hover {
+-    background-color: #3e629b;
+-}
+-nav ul ul ul {
+-    position: absolute;
+-}
+-#ts {
+-    float: left;
+-    margin-right: 596px;
+-}
+-/*
+-css code for navigation bar ends here
+-*/
+-/*
+-css code for contest form starts here
+-*/
+-.formContainer{
+-  max-width: 600px;
+-  margin: 30px auto;
+-}
+-.formHeader{
+-  font-family: proxima-nova, sans-serif;
+-  font-size: 20px;
+-  width: 180px;
+-  color: #ffffff;
+-  text-align: center;
+-  background-color: #456ca9;
+-  padding: 8px;
+-}
+-.formContent{
+-  border: 3px solid #bbc3ce;
+-  padding: 10px;
+-  padding-top: 15px;
+-  padding-bottom: 15px;
+-  margin-bottom: 30px;
+-}
+-.section{
+-  padding: 10px;
+-}
+-.displayedInfo{
+-  float: right;
+-  min-width: 40%;
+-  
+-}
+-.check{
+- float: right;
+- margin-right: 165px;
+- 
+-}
+-#reason{
+-  margin-top: -33px;
+-  padding-bottom: 5px;
+-}
+-#reasonI{
+-  width: 100%;
+-  min-height: 35px;
+-  margin: 5px auto; 
+-  border-style: none;
+-  resize:vertical;
+-}
+-.i{
+-  width: 80px;
+-  text-align: center;
+-}
+-.submitButton{
+-  width: 200px;
+-  height: 40px;
+-  background-color: #ef7900;
+-  border-style: hidden;
+-  font-size: 22px;
+-  font-family: Verdana, Geneva, sans-serif;
+-  text-transform: uppercase;
+-  color: white;
+-  margin: 0px auto;
+-  border-radius: 5px;
+-}
+-#cButton{
+-  max-width: 200px;
+-  margin: 0px auto;
+-}
+-#part{
+-    margin-top: 20px;
+-    float: left;
+-    margin-right: 0px;
+-}
+-#partR{
+-  margin-top: 22px;
+-  
+-}
+-#dynamicR{
+-  padding-bottom: 50px;
+-}
+-#startBox{
+-  margin-bottom: -15px;
+-  padding: 10px;
+-}
+-#topSelect {
+-  margin-bottom: 0px;
+-  margin-right: 15px;
+-  float: right;
+-}
+-#bottomSelect {
+-  margin-bottom: 0px;
+-  margin-right: 15px;
+-  float: right;
+-}
+-/*
+-css code for contest form ends here
+-*/
+-.startFinishActive {
+-	display: block;
+-	position: relative;
+-	width: 150px;
+-	left: 64%;
+-	bottom: -10px;
+-}
+-#contestActive{
+-	bottom: 16px;
+-    left:  430px;
+-    outline: none;
+-    margin-top: -14px;
+-    margin-left: -15px;
+-}
+-.startFinishBox{
+-  border: 0px solid;
+-}
+-.startFinishHidden {
+-	display:none;
+-}
+-#PageContent {
+-    height: 100px;
+-    width: 900px;
+-    margin: 20px auto; /* The number in this line controls the space between the menu and the PageContent div */
+-}
+-#ITContact{
+-	float: left;
+-	padding-right: 30px;
+-}
+-p{
+-font-family: Proxima Nova;
+-}
+-
+-#extraPara{
+-	font-family: Arial;
+-}
+-#homeDivs{
+-	float: left;
+-	padding-right: 30px;
+-}
+-#homeDivsEnd{
+-	float: right;
+-}
+-#homeDivsMid{
+-	float: left;
+-}
