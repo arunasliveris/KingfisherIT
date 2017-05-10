@@ -105,6 +105,9 @@ nav ul ul ul {
 #ts {
     margin-left: 51px;
 }
+#active{
+  background-color: #3e629b;
+}
 /*
 css code for navigation bar ends here
 */
