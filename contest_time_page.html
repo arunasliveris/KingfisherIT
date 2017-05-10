@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Contest Timesheet</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://www.fontify.me/wf/b0b35f6a9b13ab1907d6a76fbbf327ff" rel="stylesheet" type="text/css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+     <script>  $(document).ready(function() {
+    $("#datepicker").datepicker();
+  });
+	function showTimes(e) {
+		var element = e.parentNode.parentNode.parentNode.childNodes;
+		for (var i=0; i<element.length; i++) {
+			if (element[i].className == "startFinishHiddenContest") {
+				element[i].className = "startFinishActiveContest";
+			}
+		}
+	}
+	function removeTimes(e) {
+		var element = e.parentNode.parentNode.parentNode.childNodes;
+		for (var i=0; i<element.length; i++) {
+			if (element[i].className == "startFinishActiveContest") {
+				element[i].className = "startFinishHiddenContest";
+			}
+		}
+	}
+</script>
+   </head>
+   <body>
+      <div id="header">
+         <div id="logo">
+		 <a href="indexHome.html">
+            <img src="http://i.imgur.com/iLiAYk4.gif" alt="Kingfisher logo">
+			</a>
+         </div>
+         <div id="userID">
+            user123
+         </div>
+         <a href="notification.html">
+		 <div id="alert">3</div>
+      </div>
+	  </a>
+      <nav id="nav">
+         <ul>
+            <li id="ts">
+               <a  id="active" href="timesheets.html">Timesheets</a>
+               <ul>
+                  <li><a href="previous_time_page.html">Previous Timesheets</a></li>
+                 <li><a href="contest_time_page.html">Contest Timesheets</a></li>
+               </ul>
+              
+            </li>
+            <li><a href="help_page.html">Help</a></li>
+         </ul>
+      </nav>
+      <div id="PageContent">
+        <div class="formContainer">
+        <div class="formHeader">
+          Original timesheet
+           </div>
+        <div class="formContent">
+          <div class="section">Project: <div class="displayedInfo">COMP31</div><br/></div>
+          <div class="section">Date: <div class="displayedInfo">12/05/2017</div><br/></div>
+          <div class="section">Hours: <div class="displayedInfo">Part, 09:00-13:00</div><br/></div>
+        </div>
+          
+          <div class="formHeader">
+          Your changes
+           </div>
+        <div class="formContent">
+          <div class="section">Project: <div class="displayedInfo"> 
+            <select>
+              <option selected>COMP31</option>
+              <option>COMP43</option>
+              <option>DES21</option>
+              <option>R&D44</option>
+            </select>
+            <br /></div><br/></div>
+          
+          <div class="section">Date: <div class="displayedInfo"><input class="i" id="datepicker" value="05/19/2017"/></div><br/></div>
+          
+          <div class="section">Hours: <div class="displayedInfo">                 
+            <label for="full">Full</label>
+            <input type="radio" name="hours" id="full" class="check" onclick="removeTimes(this)">
+            <br/>
+                 <label for="part" id="part">Part</label>
+           <input type="radio" name="hours" class="check" id="part" onclick="showTimes(this);"><br/>
+                </div></div>
+       <div class="startFinishActiveContest">
+						<fieldset class="startFinishBox">
+						Start: 	<select class="startTimes">
+									<option>09:00</option>
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+								</select>
+						<br><br>
+						Finish:	<select class="finishTimes">
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+									<option>13:00</option>
+								</select>
+						</fieldset>	
+					</div>
+        </div>
+          <div class="formContent" id="reason"><textarea id="reasonI"  placeholder="Reasons for changes (Optional)..." ></textarea><br /></div>
+  
+        </div>
+		<div id="btnHolder">
+		<button class="submitHours" onclick="window.alert('Contesting hours submitted')">submit</button></div>
+      </div>
+   </body>
+</html>
