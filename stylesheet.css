@@ -1,0 +1,110 @@
+a {
+	text-decoration: none;
+	color: white;
+}
+.login_front {
+	background-image: url('login_background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.login_back {
+	background-image: url('kingfisher_background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#loginButton {
+	position: relative;
+	height: 40px;
+	width: 170px;
+	left: 60%;
+	top: 26px;
+	border-radius: 13px 13px 13px;
+}
+#loginButton:hover {
+	cursor: pointer;
+	background-color: #5E5E5E;
+	opacity: 0.3;
+}
+#login_menu {
+	position: absolute;
+	background-color: #5E5E5E;
+	width: 50%;
+	height: 50%;
+	left: 25%;
+	top: 25%;
+	border-radius: 10px 10px 10px;
+	font-family: Proxima Nova;
+}
+#login_menu_title {
+	position: absolute;
+	top: 2%;
+	width: 80%;
+	left: 10%;
+	height: 27%;
+	vertical-align: middle;
+	text-align: center;
+	color: white;
+	font-size: 30pt;
+	font-family: Proxima Nova;
+	border-bottom: 3px solid white;
+	border-radius: 7px 7px 7px;
+}
+#login_user {
+	position: absolute;
+	left: 15%;
+	top: 45%;
+	color: white;
+}
+#input_user {
+	position: absolute;
+	top: 50%;
+	left: 35%;
+	width: 50%;
+	border-radius: 5px 5px 5px;
+}
+#login_pass {
+	position: absolute;
+	left: 15%;
+	top: 60%;
+	color: white;
+}
+#input_pass {
+	position: absolute;
+	top: 65%;
+	left: 35%;
+	width: 50%;
+	border-radius: 5px 5px 5px;
+}
+#login_close {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	font-size: 20pt;
+}
+#login_btn {
+	position: absolute;
+	width: 25%;
+	height: 10%;
+	font-size: 15pt;
+	color: white;
+	background-color: #EF7900;
+	border-radius: 10px 10px 10px;
+	bottom: 10%;
+	left: 37.5%;
+	border: none;
+}
+#login_btn:hover {
+	cursor: pointer;
+	border: 2px solid #FFA64D;
+}
+#forgot_details {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 8pt;
+	bottom: 3%;
+	color: grey;
+}
+#forgot_details:hover {
+	text-decoration: underline;
+}
