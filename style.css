@@ -22,12 +22,16 @@ css code for the header starts here
     width: 35px;
     height: 35px;
     float: right;
-	color: #ffffff;
     margin-right: 20px;
     margin-top: 26px;
     line-height: 35px;
     font-weight: bold;
     background: url(http://i.imgur.com/P61vIDr.png);
+}
+#noti {
+  text-decoration: none;
+  color:  #ffffff;
+  
 }
 #userID {
     padding-top: 30px;
