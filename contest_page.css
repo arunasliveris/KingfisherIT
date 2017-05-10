@@ -79,7 +79,7 @@ nav ul li:hover a {
 }
 nav ul li a {
     display: block;
-    padding: 11px 38px;
+    padding: 11px 25px;
     font-family: font123490, arial;
     text-transform: uppercase;
     color: white;
@@ -103,8 +103,7 @@ nav ul ul ul {
     position: absolute;
 }
 #ts {
-    float: left;
-    margin-right: 596px;
+    margin-left: 51px;
 }
 /*
 css code for navigation bar ends here
