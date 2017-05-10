@@ -38,6 +38,7 @@
   <button class="tablinks" onclick="openTab(event, 'Half1')" id="defaultOpen">1ST HALF</button>
   <button class="tablinks" onclick="openTab(event, 'Half2')">2ND HALF</button>
   <button class="tablinks" onclick="openTab(event, 'Internal')">INTERNAL HOURS</button>
+	 <button class="tablinks" onclick="openTab(event, 'Overtime')">OVERTIME</button>
 
 
 </div>
@@ -165,7 +166,48 @@
 			</fieldset>
 		</form>
 </div>
+<div id="Overtime" class="tabcontent">
+	<form>
+		<fieldset class="outerContainer">
+		<legend>Log Overtime</legend>
+		<div class="formContainer" style="top: 10%;">
+			<h2>Overtime:<select style="position:relative; left: 20px;">
+				<option>1 Hour</option>
+				<option>2 Hours</option>
+				<option>3 Hours</option>
+				<option>4 Hours</option>
+				<option>5 Hours</option>
+			</select></h2>
+			<h2>Project:<select style="position:relative; left: 43px;">
+				<option>COMP32</option>
+				<option>RD44</option>
+				<option>DES21</option>
+			</select></h2>
+			<style>
+				.overtimeButton {
+					position: relative;
+					color: white;
+					width: 150px;
+					height:40px;
+					border-radius: 7px 7px 7px;
+					font-size: 15pt;
+					border: none;
+					background-color: #EF7900;
+					top: 10px;
+					left: 20px;
+				}
+				.overtimeButton:hover {
+					cursor: pointer;
+					border: 2px solid #FFA64D;
+				}
+			</style>
+			<button class="overtimeButton">submit</button>
+			</div>
+		</fieldset>
+	</form>
 </div>
+	
+	</div>
 </body>
 <script src="FormScripts.js">
 </script>
